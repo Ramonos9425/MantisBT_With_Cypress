@@ -1,5 +1,5 @@
 # Introdution
-This project have the goal to automation the application Mantis Bug Tracker with the tool Cypress, when was testaded some tests cases referes the application, with test patterns.
+This project have the goal to automation the application Mantis Bug Tracker with the tool Cypress with JavaScript, when was testaded some tests cases referes the application, with test patterns.
 
 # Installing the application Mantis with Windows
 
@@ -27,3 +27,36 @@ to open the cypress and run tests
 
 `npx cypress open` 
 
+# Tests Cases
+
+## Login
+- Login Sucess
+- Login Without Information
+- Password Without Information
+- Login Wrong
+- Password Wrong
+
+
+## Project
+- Create Project
+- Edit Project
+- Delete Project
+- Create Project Without Name
+
+## SubProject
+- Create SubProject
+- Edit SubProject
+- Delete SubProject
+- Create SubProject Without Name
+
+## Category
+- Create Category
+- Edit Category
+- Delete Category
+- Create the same Category
+
+## Version
+- Create Version
+- Edit Version
+- Delete Version
+- Create the same Version
