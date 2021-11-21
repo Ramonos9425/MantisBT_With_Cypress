@@ -17,6 +17,8 @@
 import './commands/commands'
 import './commands/loginCommands'
 import './flows/loginFlows'
+import './commands/initialScreenCommands'
+import './commands/manageProjectCommands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
