@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
-import LoginFixtures from '../../fixtures/loginFixtures';
-import LoginLocators from '../../support/locators/loginLocators'
+import LoginFixtures from '../fixtures/loginFixtures';
+import LoginLocators from '../support/locators/loginLocators'
 
 describe('loginTests', () => {
     beforeEach(()=>{

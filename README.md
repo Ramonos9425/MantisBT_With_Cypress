@@ -1,6 +1,13 @@
-# Simple Example using Cypress E2E tests
-PageObject in `../support/pages/..`
-Tests in `../integration`
+# Introdution
+This project have the goal to automation the application Mantis Bug Tracker with the tool Cypress, when was testaded some tests cases referes the application, with test patterns.
+
+# Installing the application Mantis with Windows
+
+1 - Make download the tool xampp: https://www.apachefriends.org/download.html and install
+2 - Make download the MantisBT: https://www.mantisbt.org/download.php, I used the version: 2.25.2
+3 - Copy the unzipped mantis folder into the htdocs folder in xampp: C:\xampp\htdocs and leave the mantis folder with just the name mantis
+4 - The, open the xampp and start the Apache and MySQL
+5 - Open the browser and type: localhost/mantis
 
 ## Clone Project
 `git clone https://github.com/Sayoan/cypress_example.git`
