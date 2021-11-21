@@ -17,6 +17,7 @@
 import './commands/commands'
 import './commands/loginCommands'
 import './flows/loginFlows'
+import './flows/createProjectFlows'
 import './commands/initialScreenCommands'
 import './commands/manageProjectCommands'
 

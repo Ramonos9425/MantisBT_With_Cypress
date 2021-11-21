@@ -11,14 +11,14 @@ describe('loginTests', () => {
 
     })
 
-    it('Delete Project', () => {
+    it('Delete SubProject', () => {
         cy.submitLoginFlows(LoginFixtures.userName, LoginFixtures.password)
         cy.selectManager()
         cy.selectManageProjects()
-        cy.selectCreatedProject()
+        cy.selectCreatedSubProject()
         cy.selectDeleteProject()
         cy.selectConfirmDeleteProject()
-        cy.assertText2(ManageProjectsLocators.txCreatedProject) 
+        cy.assertText2(ManageProjectsLocators.txCreatedSubProject) 
     });
     
 
