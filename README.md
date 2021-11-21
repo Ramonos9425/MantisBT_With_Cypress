@@ -1,5 +1,5 @@
 # Introdution
-This project have the goal to automation the application Mantis Bug Tracker with the tool Cypress with JavaScript, when was testaded some tests cases referes the application, with test patterns.
+This project have the goal to automation the application Mantis Bug Tracker with the tool Postman with JavaScript, when was testaded some end points referes the application.
 
 # Installing the application Mantis with Windows
 
@@ -11,52 +11,72 @@ This project have the goal to automation the application Mantis Bug Tracker with
 
 ## Clone Project
 `https://github.com/Ramonos9425/MantisBT_With_Cypress.git`
-## Installing the Cypress first time (only in the first time)
-[![npm version](https://camo.githubusercontent.com/eeac3804665f2c05dfaf1d18dff2722db530cde0/68747470733a2f2f62616467652e667572792e696f2f6a732f637970726573732e737667)](https://badge.fury.io/js/cypress)
-Install Cypress for Mac, Linux, or Windows, then  [get started](https://docs.cypress.io/guides/getting-started/installing-cypress.html).
 
-`npm install cypress --save-dev`
-
-## Prepare the dependencies
-install all dependencies from the root directory
-
-`npm install`
-
-## Opening Cypress GUI
-to open the cypress and run tests
-
-`npx cypress open` 
+## To open the collection and environment in Postman: File -> Import -> File
+- Its necessary to change the authorization token, do login in Mantis, go to user configuration: API Keys, its necessary to create one, and to change in Postman: environment  to set the access_token in current_value
 
 # Tests Cases
 
-## Login
-- Login Sucess
-- Login Without Information
-- Password Without Information
-- Login Wrong
-- Password Wrong
+## Projects
+- Get all projects
+- Get a project
+- Create a project
+- Update a project
+- Delete a project
+- Add a sub-project
+- Update a subproject
+- Delete a sub-project
+- Create a project version
 
-
-## Project
-- Create Project
-- Edit Project
-- Delete Project
-- Create Project Without Name
+## Issues
+- Get an issue
+- Get issue files
+- Get issue file (single)
+- Get all issues
+- Get issues for a project
+- Get issues matching filter
+- Get isssues assigned to me
+- Get issues reported by me
+- Get issues monitored by me
+- Get unassigned issues
+- Create an issue (minimal)
+- Create an issue
+- Create an issue with attachment
+- Update an issue (minimal)
+- Update an issue
+- Delete an issue
+- Add attachments to issue
+- Create an issue note
+- Create an issue note with time tracking
+- Create an issue note with attachment
+- Delete an issue note
+- Monior an issue
+- Monitor an issue (for specified users)
+- Attach a tag to issue
+- Detach a tag from an issue
+- Attach a tag to issue copy
+- Add an issue relationship
+- Delete an issue relationship
 
 ## SubProject
-- Create SubProject
-- Edit SubProject
-- Delete SubProject
-- Create SubProject Without Name
+- Get all filters
+- Get a filter
+- Delete a filter
 
-## Category
-- Create Category
-- Edit Category
-- Delete Category
-- Create the same Category
+## Users
+- Get My User Info
+- Create a user
+- Create a user (minimal)
+- Delete a user
+- Reset user password
 
-## Version
-- Create Version
-- Edit Version
-- Delete Version
-- Create the same Version
+## Config
+- Get Configuration Option
+- Get Multiple Configuration Options
+
+## Lang
+- Get a localized string
+- Get multiple localized strings
+
+## Pages
+- Get Issue View Page
