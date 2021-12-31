@@ -3,7 +3,7 @@ import LoginFixtures from '../fixtures/loginFixtures';
 import ManageProjectsFixtures from '../fixtures/manageProjectsFixtures';
 import ManageProjectsLocators from '../support/locators/manageProjectsLocators';
 
-describe('loginTests', () => {
+describe('Edit a Project', () => {
     beforeEach(()=>{
         cy.visit(Cypress.config('url'));
     })

@@ -2,7 +2,7 @@
 import LoginFixtures from '../fixtures/loginFixtures';
 import ManageProjectsLocators from '../support/locators/manageProjectsLocators';
 
-describe('loginTests', () => {
+describe('Remove a SubProject', () => {
     beforeEach(()=>{
         cy.visit(Cypress.config('url'));
     })
@@ -11,11 +11,11 @@ describe('loginTests', () => {
 
     })
 
-    it('Delete SubProject', () => {
+    it('Remove SubProject Sucess', () => {
         cy.submitLoginFlows(LoginFixtures.userName, LoginFixtures.password)
         cy.selectManager()
         cy.selectManageProjects()
-        cy.selectCreatedSubProject()
+        cy.selectCreatedSubProject() //problema ao clicar aqui
         cy.selectDeleteProject()
         cy.selectConfirmDeleteProject()
         cy.assertText2(ManageProjectsLocators.txCreatedSubProject) 

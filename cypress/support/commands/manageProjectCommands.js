@@ -46,7 +46,7 @@ Cypress.Commands.add("selectConfirmDeleteProject", () => {
 })
 
 Cypress.Commands.add("selectCreateSubProject", () => {
-    cy.get(ManageProjectsLocators.btCreateSubproject).click()
+    cy.get(ManageProjectsLocators.btCreateSubproject).click({force: true})
 })
 
 Cypress.Commands.add("selectCreatedSubProject", () => {

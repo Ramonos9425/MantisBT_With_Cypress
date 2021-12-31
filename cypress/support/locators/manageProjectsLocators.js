@@ -14,7 +14,7 @@ export default class manageProjectsLocators {
     static txCreatedSubProject = 'tbody > :nth-child(2) > :nth-child(1)'
     static btDeleteProject = '#project-delete-form > fieldset > .btn'
     static btConfirmDeleteProject = '.center > .btn'
-    static btCreateSubproject = '#manage-project-update-subprojects-div > .widget-box > .widget-toolbox > .form-inline > .btn'
+    static btCreateSubproject = '#manage-project-update-subprojects-div > .widget-box > .widget-toolbox > .form-inline > .btn' //'tbody > :nth-child(2) > :nth-child(1) > a'//
     static txValidationState = ':nth-child(2) > .category'
     static txNewCategory = '#project-add-category-form > fieldset > .input-sm'
     static btaddCategory = '[value="Adicionar Categoria"]'

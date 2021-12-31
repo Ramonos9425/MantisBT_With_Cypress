@@ -3,7 +3,7 @@ import LoginFixtures from '../fixtures/loginFixtures';
 import ManageProjectsFixtures from '../fixtures/manageProjectsFixtures';
 import ManageProjectsLocators from '../support/locators/manageProjectsLocators';
 
-describe('loginTests', () => {
+describe('Edit a SubProject', () => {
     beforeEach(()=>{
         cy.visit(Cypress.config('url'));
     })
@@ -16,7 +16,7 @@ describe('loginTests', () => {
         cy.submitLoginFlows(LoginFixtures.userName, LoginFixtures.password)
         cy.selectManager()
         cy.selectManageProjects()
-        cy.selectCreatedSubProject()
+        cy.selectCreatedSubProject() // nao esta clicando !!!!!!!!
         cy.fillNameProject(ManageProjectsFixtures.nameSubProjectEdit)
         cy.selectState(ManageProjectsFixtures.stateEdit)
         cy.selectVisibilitie(ManageProjectsFixtures.visibilitieEdit)

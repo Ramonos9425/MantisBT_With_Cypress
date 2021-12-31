@@ -2,7 +2,7 @@
 import LoginFixtures from '../fixtures/loginFixtures';
 import ManageProjectsLocators from '../support/locators/manageProjectsLocators';
 
-describe('loginTests', () => {
+describe('Remove a Project', () => {
     beforeEach(()=>{
         cy.visit(Cypress.config('url'));
     })
@@ -11,7 +11,7 @@ describe('loginTests', () => {
 
     })
 
-    it('Delete Project', () => {
+    it('Remove Project Sucess', () => {
         cy.submitLoginFlows(LoginFixtures.userName, LoginFixtures.password)
         cy.selectManager()
         cy.selectManageProjects()

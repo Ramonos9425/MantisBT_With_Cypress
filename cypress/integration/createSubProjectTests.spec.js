@@ -2,9 +2,8 @@
 import LoginFixtures from '../fixtures/loginFixtures';
 import ManageProjectsFixtures from '../fixtures/manageProjectsFixtures';
 import ManageProjectsLocators from '../support/locators/manageProjectsLocators';
-import InitialScreenLocators from '../support/locators/initialScreenLocators'
 
-describe('loginTests', () => {
+describe('Create a SubProject', () => {
     beforeEach(()=>{
         cy.visit(Cypress.config('url'));
     })
@@ -15,9 +14,8 @@ describe('loginTests', () => {
 
     it.only('Create SubProject Sucess', () => {
         cy.submitLoginFlows(LoginFixtures.userName, LoginFixtures.password)
-        cy.get(InitialScreenLocators.btmanage).click()
-        cy.get(ManageProjectsLocators.btmanageProjects).click()
-        //cy.createProjectFlows(ManageProjectsFixtures.nameProjectFlows, ManageProjectsFixtures.descriptionFlows)
+        cy.selectManager()
+        cy.selectManageProjects()
         cy.selectCreatedProject()
         cy.selectCreateSubProject()
         cy.fillNameProject(ManageProjectsFixtures.nameSubProject)
@@ -29,8 +27,8 @@ describe('loginTests', () => {
 
     it('Create SubProject Without Name', () => {
         cy.submitLoginFlows(LoginFixtures.userName, LoginFixtures.password)
-        cy.get(InitialScreenLocators.btmanage).click()
-        cy.get(ManageProjectsLocators.btmanageProjects).click()
+        cy.selectManager()
+        cy.selectManageProjects()
         cy.selectCreatedProject()
         cy.selectCreateSubProject()
         cy.fillDescription(ManageProjectsFixtures.descriptionSubProject)

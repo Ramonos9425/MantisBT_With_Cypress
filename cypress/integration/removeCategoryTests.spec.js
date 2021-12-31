@@ -1,9 +1,8 @@
 /// <reference types="cypress" />
 import LoginFixtures from '../fixtures/loginFixtures';
 import ManageProjectsLocators from '../support/locators/manageProjectsLocators';
-import InitialScreenLocators from '../support/locators/initialScreenLocators'
 
-describe('loginTests', () => {
+describe('Remove a Category', () => {
     beforeEach(()=>{
         cy.visit(Cypress.config('url'));
     })
@@ -12,11 +11,10 @@ describe('loginTests', () => {
 
     })
 
-    it('Edit Category Sucess', () => {
+    it('Remove Category Sucess', () => {
         cy.submitLoginFlows(LoginFixtures.userName, LoginFixtures.password)
-        cy.get(InitialScreenLocators.btmanage).click()
-        cy.get(ManageProjectsLocators.btmanageProjects).click()
-        //cy.createProjectFlows(ManageProjectsFixtures.nameProjectFlows, ManageProjectsFixtures.descriptionFlows)
+        cy.selectManager()
+        cy.selectManageProjects()
         cy.selectCreatedProject()
         cy.selectDeleteCategory()
         cy.selectConfirmDeleteCategory()
